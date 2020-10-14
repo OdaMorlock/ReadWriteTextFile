@@ -10,11 +10,25 @@ namespace ReadWriteTextFile
         static void Main(string[] args)
         {
 
-            WriteToFile("persons.txt", "Marcus,Bäckström,25,Är Bäst,GodLike");
-            ReadFromFile("persons.txt");
+            //WriteToFile("textfile.txt", "My name is Marcus and i´m 25 and I´m the Greatest Being Alive And Godlike. ");
+            //WriteToFile("textfile.txt", "No one can Match Marcus! ");
+            ReadFromFile("textfile.txt");
         }
 
-        private static void WriteToFile(string filename,string text)
+        private static void WriteToFile(string filename, string content)
+        {
+           
+            File.AppendAllText(@$"D:\Files\{filename}", content);
+
+        }
+
+        private static void ReadFromFile(string filename)
+        {
+            var content = File.ReadAllText(@$"D:\Files\{filename}");
+            Console.WriteLine(content);
+        }
+
+        /*private static void WriteToFile(string filename,string text)
         {
             var lines = new List<string>();
             lines.Add(text);
@@ -23,9 +37,10 @@ namespace ReadWriteTextFile
             File.AppendAllLines(@$"D:\Files\{filename}", lines);
 
 
-        }
+        }*/
 
-        private static void ReadFromFile(string filename)
+
+        /*private static void ReadFromFile(string filename)
         {
             Console.WriteLine("Using List");
             var lines = File.ReadAllLines(@$"D:\Files\{filename}").ToList();
@@ -50,6 +65,6 @@ namespace ReadWriteTextFile
             }
 
         }
-
+        */
     }
 }
