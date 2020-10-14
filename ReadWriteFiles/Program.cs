@@ -10,7 +10,7 @@ namespace ReadWriteTextFile
         static void Main(string[] args)
         {
 
-            WriteToFile("persons.txt", "Marcus, Är ,Bäst,GodLike");
+            WriteToFile("persons.txt", "Marcus,Bäckström,25,Är Bäst,GodLike");
             ReadFromFile("persons.txt");
         }
 
@@ -29,17 +29,25 @@ namespace ReadWriteTextFile
         {
             Console.WriteLine("Using List");
             var lines = File.ReadAllLines(@$"D:\Files\{filename}").ToList();
+            var persons = new List<Person>();
+            
+
             foreach(var line in lines)
             {
-                Console.WriteLine(line);
+                var data = line.Split(',');
+                
+
+             persons.Add(new Person(data[0], data[1], Convert.ToInt32(data[2]), data[3], data[4]));
+                //persons.Add(new Person { FirstName = data[0], LastName = data[1], Age = Convert.ToInt32(data[2]), Condition = data[3], Status = data[4] });
+
+                foreach(var person in persons)
+                {
+                    Console.WriteLine($"{person.FirstName} {person.LastName} is {person.Age} and is {person.Condition} and is  {person.Status}");
+                }
+
             }
 
-            Console.WriteLine("Using Array");
-            var lines2 = File.ReadAllLines(@$"D:\Files\{filename}");
-            foreach (var line in lines2)
-            {
-                Console.WriteLine(line);
-            }
+            
 
         }
 
