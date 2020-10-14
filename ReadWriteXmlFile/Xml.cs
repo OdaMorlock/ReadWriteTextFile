@@ -7,8 +7,8 @@ namespace ReadWriteXmlFile
     {
         static void Main(string[] args)
         {
-            XmlService.WriteToFile(@"D:\Files\\xml\books.xml");
-            XmlService.ReadFromFile(@"D:\Files\\xml\books.xml");
+            XmlService.WriteToFile(@"D:\Files\xml\books.xml");
+            XmlService.ReadFromFile(@"D:\Files\xml\books.xml");
         }
     }
 }

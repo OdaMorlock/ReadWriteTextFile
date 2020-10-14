@@ -14,9 +14,9 @@ namespace ReadWriteCsvFile
             
             string content = "Marcus; Backstrom; 25; God; UnMatched";
 
-            CsvService.WriteToFile(@"D:\Files\\csv\persons.csv",content);
+            CsvService.WriteToFile(@"D:\Files\csv\persons.csv",content);
 
-           var persons = CsvService.ReadFromFile(@"D:\Files\\csv\persons.csv");
+           var persons = CsvService.ReadFromFile(@"D:\Files\csv\persons.csv");
 
             foreach (var person in persons)
             {
