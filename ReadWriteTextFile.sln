@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWriteTextFile", "ReadWriteFiles\ReadWriteTextFile.csproj", "{03A226DD-DF0B-4BBB-AD78-FF058BF9A73A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWriteCsvFile", "ReadWriteCsvFile\ReadWriteCsvFile.csproj", "{C3472889-1F18-400B-9DFD-3614C21D0F8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedClassLibrary", "SharedClassLibrary\SharedClassLibrary.csproj", "{C0BF2372-88B8-4957-8B17-07972BE6636D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{03A226DD-DF0B-4BBB-AD78-FF058BF9A73A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03A226DD-DF0B-4BBB-AD78-FF058BF9A73A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03A226DD-DF0B-4BBB-AD78-FF058BF9A73A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3472889-1F18-400B-9DFD-3614C21D0F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3472889-1F18-400B-9DFD-3614C21D0F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3472889-1F18-400B-9DFD-3614C21D0F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3472889-1F18-400B-9DFD-3614C21D0F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BF2372-88B8-4957-8B17-07972BE6636D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BF2372-88B8-4957-8B17-07972BE6636D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BF2372-88B8-4957-8B17-07972BE6636D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BF2372-88B8-4957-8B17-07972BE6636D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

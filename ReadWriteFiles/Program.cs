@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using SharedClassLibrary;
 
 namespace ReadWriteTextFile
 {
@@ -10,8 +11,8 @@ namespace ReadWriteTextFile
         static void Main(string[] args)
         {
 
-            //WriteToFile("textfile.txt", "My name is Marcus and i´m 25 and I´m the Greatest Being Alive And Godlike. ");
-            //WriteToFile("textfile.txt", "No one can Match Marcus! ");
+            WriteToFile("textfile.txt", "My name is Marcus and i´m 25 and I´m the Greatest Being Alive And Godlike. ");
+            WriteToFile("textfile.txt", "No one can Match Marcus! ");
             ReadFromFile("textfile.txt");
         }
 

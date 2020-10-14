@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ReadWriteTextFile
+namespace SharedClassLibrary
 {
     public class Person
     {
-
         public Person()
         {
-                
+
         }
 
-        public Person(string firstname,string lastname,int age, string condition,string status)
+        public Person(string firstname, string lastname, int age, string condition, string status)
         {
             FirstName = firstname;
             LastName = lastname;
