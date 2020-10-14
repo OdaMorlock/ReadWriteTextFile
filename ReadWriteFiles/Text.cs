@@ -19,13 +19,13 @@ namespace ReadWriteTextFile
         private static void WriteToFile(string filename, string content)
         {
            
-            File.AppendAllText(@$"D:\Files\{filename}", content);
+            File.AppendAllText(@$"D:\Files\text\{filename}", content);
 
         }
 
         private static void ReadFromFile(string filename)
         {
-            var content = File.ReadAllText(@$"D:\Files\{filename}");
+            var content = File.ReadAllText(@$"D:\Files\text\{filename}");
             Console.WriteLine(content);
         }
 

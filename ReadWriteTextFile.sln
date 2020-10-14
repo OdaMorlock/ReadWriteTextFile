@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWriteCsvFile", "ReadWri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedClassLibrary", "SharedClassLibrary\SharedClassLibrary.csproj", "{C0BF2372-88B8-4957-8B17-07972BE6636D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWriteXmlFile", "ReadWriteXmlFile\ReadWriteXmlFile.csproj", "{73089A64-4611-44CC-A202-B0319D08C4CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWriteJsonFile", "ReadWriteJsonFile\ReadWriteJsonFile.csproj", "{7A6B08E7-D7D8-43DB-864E-41984BB95146}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C0BF2372-88B8-4957-8B17-07972BE6636D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0BF2372-88B8-4957-8B17-07972BE6636D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0BF2372-88B8-4957-8B17-07972BE6636D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73089A64-4611-44CC-A202-B0319D08C4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73089A64-4611-44CC-A202-B0319D08C4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73089A64-4611-44CC-A202-B0319D08C4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73089A64-4611-44CC-A202-B0319D08C4CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6B08E7-D7D8-43DB-864E-41984BB95146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6B08E7-D7D8-43DB-864E-41984BB95146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6B08E7-D7D8-43DB-864E-41984BB95146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6B08E7-D7D8-43DB-864E-41984BB95146}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
