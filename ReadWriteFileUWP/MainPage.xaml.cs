@@ -24,20 +24,32 @@ namespace ReadWriteFileUWP
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        StorageFile storageFile;
+        StorageFolder storageFolder;
+        string content = "Content";
+        string file = "Lok.txt";
+
         public MainPage()
         {
             this.InitializeComponent();
             //Task.Run(() => CreateFileAsync());
             CreateFileAsync().GetAwaiter();
+            WriteToFileAsync().GetAwaiter();
         }
 
         private async Task CreateFileAsync()
         {
             //StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
-            StorageFolder storageFolder = KnownFolders.DocumentsLibrary;
+             storageFolder = KnownFolders.DocumentsLibrary;
 
+             await storageFolder.CreateFileAsync(file,CreationCollisionOption.ReplaceExisting);
 
-            StorageFile storageFile = await storageFolder.CreateFileAsync("Lok.txt",CreationCollisionOption.ReplaceExisting);
+        }
+
+        private async Task WriteToFileAsync()
+        {
+            StorageFile file = await storageFolder.GetFileAsync("Lok.txt");
+            await FileIO.WriteTextAsync(storageFile, content);
         }
     }
 }
