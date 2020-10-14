@@ -47,7 +47,7 @@ namespace SharedClassLibrary
                 if (json != string.Empty)
                 {
                     var list = JsonConvert.DeserializeObject<List<Person>>(json);
-                    list.Add( new Person { }  );
+                    list.Add(person);
 
                     var json2 = JsonConvert.SerializeObject(list);
                     
@@ -57,12 +57,8 @@ namespace SharedClassLibrary
                     writer.WriteLine(json2);
 
                     writer.Close();
-                    /*list.Add( person );
 
-                    using StreamWriter writer = new StreamWriter(filepath);
-                    json = JsonConvert.SerializeObject(list);
-                    writer.Write(json);*/
-
+                    //Console.WriteLine(json2);
                 }
 
 
