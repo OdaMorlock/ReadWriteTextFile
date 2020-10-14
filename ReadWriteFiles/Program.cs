@@ -40,14 +40,14 @@ namespace ReadWriteTextFile
              persons.Add(new Person(data[0], data[1], Convert.ToInt32(data[2]), data[3], data[4]));
                 //persons.Add(new Person { FirstName = data[0], LastName = data[1], Age = Convert.ToInt32(data[2]), Condition = data[3], Status = data[4] });
 
-                foreach(var person in persons)
-                {
-                    Console.WriteLine($"{person.FirstName} {person.LastName} is {person.Age} and is {person.Condition} and is  {person.Status}");
-                }
+               
 
             }
 
-            
+            foreach (var person in persons)
+            {
+                Console.WriteLine($"{person.FirstName} {person.LastName} is {person.Age} and is {person.Condition} and is  {person.Status}");
+            }
 
         }
 
